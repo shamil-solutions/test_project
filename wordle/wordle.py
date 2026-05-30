@@ -176,9 +176,6 @@ def play_game(stats):
         if len(guess) != 5 or not guess.isalpha():
             print(f"  ⚠️  Please enter a valid 5-letter word.")
             input("  Press Enter to continue...")
-            attempt -= 1  # don't count this as a real attempt
-            # re-loop without incrementing
-            guesses_backup = guesses[:]
             continue
 
         guesses.append(guess)
